@@ -14,7 +14,7 @@ Resources:
     Properties:
         GroupDescription: Allow http to our test host
         VpcId:
-          Ref: myVPC
+         Ref: myVPC
         SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 80
@@ -28,7 +28,7 @@ Resources:
   myWebServerInstance: 
     Type: AWS::EC2::Instance
     Properties:
-      InstanceType: t3.micro
+      InstanceType: t2.micro
       ImageId: !Ref AMItoUse
       NetworkInterfaces: 
         - AssociatePublicIpAddress: "true"
