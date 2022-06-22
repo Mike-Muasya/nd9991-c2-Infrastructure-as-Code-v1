@@ -58,8 +58,7 @@ Resources:
           systemctl start apache2.service
           cd /var/www/html
           echo "Udagram Demo Web Server Up and Running!" > index.html          
-      ImageId: ami-0729e439b6769d6ab 
-      KeyName: private-server-devops-key
+      ImageId: ami-0729e439b6769d6ab
       SecurityGroups:
       - Ref: WebServerSecGroup
       InstanceType: t3.medium
